@@ -132,7 +132,33 @@ img {
         max-width: 1140px;
         width: 100%;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 2%;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row {
+        flex-flow: column nowrap;
+    }
+
+    .lessons .col,
+    .steps .col,
+    .why-us .col {
+        padding-top: 4rem;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+/* sono impazzito per ore non capendo perchè non funzionasse, 
+avevo cancellato la "o" di "viewport" :) 
+p.s. è dalle 18 che sono qui per quella maledetta o */
